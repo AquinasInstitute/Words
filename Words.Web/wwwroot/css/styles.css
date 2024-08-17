@@ -1,0 +1,250 @@
+:root {
+    touch-action: pan-x pan-y;
+    height: 100%
+}
+
+.hidden {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.flex-row {
+    flex-direction: row;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-cols-1 {
+    grid-template-columns: 1fr;
+}
+
+.grid-cols-2 {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-cols-3 {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gap-4 {
+    grid-gap: 1rem;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.max-h-full {
+    height: calc(100vh - 4em);
+}
+
+.h-full {
+    height: 100%;
+}
+
+.h-100vh {
+    height: 100vh;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.m-2 {
+    margin: 0.5rem;
+}
+
+.ml-2 {
+    margin-left: 0.5rem;
+}
+
+.mr-2 {
+    margin-right: 0.5rem;
+}
+
+.p-2 {
+    padding: 0.5rem;
+}
+
+.failure {
+    color: #f17568;
+}
+
+.rounded-md {
+    border-radius: 0.375rem;
+}
+
+.border {
+    border: 1px solid black;
+}
+
+.bg-light-gray {
+    background-color: lightgray;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    transform: translate(0.5rem, -0.5rem);
+}
+
+.icon-header {
+    width: 1.5rem;
+    height: 1.5rem;
+    transform: translateY(0.75rem);
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.overflow-auto {
+    overflow: auto;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.whitespace-pre-wrap {
+    white-space: pre-wrap;
+}
+
+.monospace {
+    font-family: monospace;
+}
+
+.text-xl
+{
+    font-size: 1.25em;
+    line-height: 175%;
+}
+
+.size-limit
+{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 1920px;
+}
+
+.min-w-entry
+{
+    min-width: 500px;
+}
+
+.text-center
+{
+    text-align: center;
+}
+
+/* Responsive */
+
+@media (min-width: 500px) {
+    .md\:grid-cols-3 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1070px) {
+    .lg\:hidden {
+        display: none;
+    }
+    
+    .lg\:block {
+        display: block;
+    }
+    
+    .lg\:grid {
+        display: grid;
+    }
+
+    .lg\:flex
+    {
+        display: flex;
+    }
+
+    .lg\:grid-cols-3 {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/*
+    Stolen from Bootstrap.
+    This is not a substantial portion of the code, but the license has been included nevertheless.
+    
+    The MIT License (MIT)
+
+    Copyright (c) 2011-2024 The Bootstrap Authors
+    
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+    
+    The above copyright notice and this permission notice shall be included in
+    all copies or substantial portions of the Software.
+    
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+    THE SOFTWARE.
+*/
+
+.spinner {
+    display: inline-block;
+    width: 0.5em;
+    height: 0.5em;
+    border: 0.25em solid lightgreen;
+    border-color: lightgreen transparent lightgreen lightgreen;
+    border-radius: 50%;
+    animation: spinner .75s linear infinite;
+
+    text-indent: 150%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+@keyframes spinner {
+    to {
+        transform: rotate(360deg);
+    }
+}

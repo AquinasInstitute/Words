@@ -1,0 +1,4 @@
+{
+    "UseDatabase": false,
+    "ConnectionString": "Server=localhost;Database=testing;Uid=test;Pwd=test;"
+}

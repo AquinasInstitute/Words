@@ -1,0 +1,42 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Words";
+}
+
+<div class="grid grid-cols-1 lg:grid-cols-3 size-limit justify-center items-center">
+    <div class="hidden lg:flex flex-row justify-center">
+        <h3 class="hidden lg:block">Latin</h3>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <input class="rounded-md p-2" id="search-term" placeholder="Latin or English">
+        <div class="bg-light-gray rounded-md p-2 cursor-pointer text-center" id="search-button">Search</div>
+        <div class="bg-light-gray rounded-md p-2 cursor-pointer text-center" id="clear-button">Clear All</div>
+    </div>
+    <div class="hidden lg:flex flex-row justify-center">
+        <h3 class="hidden lg:block">English</h3>
+    </div>
+</div>
+
+<div class="flex lg:hidden flex-col overflow-hidden max-h-full">
+    <div class="max-h-full overflow-auto">
+        <div id="shared-output">
+            <!-- A Copy Of All Results Go Here -->
+        </div>
+    </div>
+</div>
+
+<div class="hidden lg:grid grid-cols-2 gap-4 max-h-full size-limit">
+    <div class="flex flex-col overflow-hidden">
+        <div class="max-h-full overflow-auto">
+            <div id="latin-output">
+                <!-- Latin Results Go Here -->
+            </div>
+        </div>
+    </div>
+    <div class="flex flex-col overflow-hidden">
+        <div id="english-output" class="max-h-full overflow-auto">
+            <!-- English Results Go Here -->
+        </div>
+    </div>
+</div>
