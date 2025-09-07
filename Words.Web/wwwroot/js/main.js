@@ -45,7 +45,7 @@ const renderOutput = function (query, contents, output, searches) {
     const makeDisplay = (trueId, baseId) =>
     {
         const wrapper = $("div", {
-            className: "flex flex-col rounded-md m-2 border whitespace-pre-wrap monospace min-w-entry",
+            className: "flex flex-col rounded-md m-2 p-2 border whitespace-pre-wrap monospace min-w-entry card-shadow",
             id: trueId
         }, [
             $("div", {}, [
@@ -56,6 +56,7 @@ const renderOutput = function (query, contents, output, searches) {
                     $("img", {
                         src: "./icons/x.svg",
                         className: "p-2 cursor-pointer icon",
+                        style: "height: 1.5em; width: 1.5em;",
                         onclick: () => {
                             const specific = document.getElementById(baseId + "-specific");
                             specific.parentNode.removeChild(specific);
@@ -193,4 +194,6 @@ clearButton.addEventListener("click", () =>
     emptyNode(latinOutput);
     emptyNode(englishOutput);
     emptyNode(sharedOutput);
-})
+});
+
+searchTerm.focus();

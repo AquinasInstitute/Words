@@ -8,10 +8,21 @@
     <div class="hidden lg:flex flex-row justify-center">
         <h3 class="hidden lg:block">Latin</h3>
     </div>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-        <input class="rounded-md p-2" id="search-term" placeholder="Latin or English">
-        <div class="bg-light-gray rounded-md p-2 cursor-pointer text-center" id="search-button">Search</div>
-        <div class="bg-light-gray rounded-md p-2 cursor-pointer text-center" id="clear-button">Clear All</div>
+    <div class="flex flex-row items-center justify-center">
+        <input type="search" class="rounded-md p-1 mr-2" id="search-term" placeholder="Latin or English">
+        <div class="search-btn mr-2" id="search-button" title="Search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <circle cx="11" cy="11" r="8" stroke="white" stroke-width="2" fill="#34c759" />
+                <line x1="17" y1="17" x2="22" y2="22" stroke="white" stroke-width="2" />
+            </svg>
+        </div>
+        <div class="clear-btn" id="clear-button" title="Clear">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                <circle cx="10" cy="10" r="8" stroke="white" stroke-width="2" fill="#ff3b30" />
+                <line x1="7" y1="7" x2="13" y2="13" stroke="white" stroke-width="2" />
+                <line x1="13" y1="7" x2="7" y2="13" stroke="white" stroke-width="2" />
+            </svg>
+        </div>
     </div>
     <div class="hidden lg:flex flex-row justify-center">
         <h3 class="hidden lg:block">English</h3>
