@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Words", "Words\Words.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Words.Tests", "Words.Tests\Words.Tests.csproj", "{041C7F67-F8EA-48BC-9954-0A30CB19B3D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Words.Web", "Words.Web\Words.Web.csproj", "{7D4712A8-B457-4964-BD8C-DD1992A6DD32}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "words.ac", "words.ac\words.ac.csproj", "{7D4712A8-B457-4964-BD8C-DD1992A6DD32}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Words.Transformer", "Words.Transformer\Words.Transformer.fsproj", "{F41D9464-557F-4EE1-9C56-02DA7298B336}"
 EndProject

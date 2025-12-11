@@ -195,5 +195,3 @@ clearButton.addEventListener("click", () =>
     emptyNode(englishOutput);
     emptyNode(sharedOutput);
 });
-
-searchTerm.focus();
